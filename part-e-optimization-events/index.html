@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickCart - Optimization & DOM Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>QuickCart</h1>
+    <p>Part E - Performance Optimization & DOM Events</p>
+  </header>
+
+  <main>
+    <!-- Task 1: debounce -->
+    <section class="card">
+      <h2>1. Debounced search (500 ms)</h2>
+      <input type="text" id="searchInput" placeholder="Type a product name..." />
+      <p>Keystrokes: <strong id="keyCount">0</strong> | Searches run: <strong id="searchCount">0</strong></p>
+      <ul id="searchResults"></ul>
+    </section>
+
+    <!-- Task 2: throttle -->
+    <section class="card">
+      <h2>2. Throttled scroll (1000 ms)</h2>
+      <p>Scroll the page. Scroll events: <strong id="scrollEvents">0</strong> | Throttled runs: <strong id="scrollRuns">0</strong></p>
+    </section>
+
+    <!-- Task 3: memoization -->
+    <section class="card">
+      <h2>3. Memoized discount calculator</h2>
+      <div class="row">
+        <input type="number" id="priceInput" placeholder="Price" value="50000" />
+        <input type="number" id="percentInput" placeholder="Discount %" value="10" />
+        <button id="calcBtn">Calculate</button>
+      </div>
+      <p id="calcResult">Result will appear here</p>
+      <ul id="calcLog"></ul>
+    </section>
+
+    <!-- Task 4a: bubbling -->
+    <section class="card">
+      <h2>4a. Event bubbling</h2>
+      <label><input type="checkbox" id="stopCheck" /> Use event.stopPropagation() on the button</label>
+      <ul id="bubbleList" class="product-list">
+        <li>Laptop <button class="bubble-btn">Remove</button></li>
+        <li>Mouse <button class="bubble-btn">Remove</button></li>
+        <li>Keyboard <button class="bubble-btn">Remove</button></li>
+      </ul>
+      <ul id="bubbleLog" class="log"></ul>
+    </section>
+
+    <!-- Task 4b: delegation -->
+    <section class="card">
+      <h2>4b. Event delegation</h2>
+      <ul id="productList" class="product-list">
+        <li data-id="1"><span>Laptop</span> <button class="remove-btn">Remove</button></li>
+        <li data-id="2"><span>Mouse</span> <button class="remove-btn">Remove</button></li>
+        <li data-id="3"><span>Keyboard</span> <button class="remove-btn">Remove</button></li>
+      </ul>
+      <button id="addBtn">Add new product</button>
+      <p class="note">Only one listener is attached to the list, so newly added products work too.</p>
+    </section>
+
+    <div class="spacer">Keep scrolling...</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
