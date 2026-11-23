@@ -87,4 +87,4 @@ Part E screenshots are stored in the `part-e-optimization-events/Screenshots/` f
 ## Submission
 - GitHub repository: https://github.com/Adithya3633/advanced-javascript-assignment
 - Loom video: _(add your Loom link)_
-- Live link: N.A
+- Live link: https://adithya3633.github.io/advanced-javascript-assignment/
