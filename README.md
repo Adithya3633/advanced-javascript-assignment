@@ -22,8 +22,13 @@ quickcart-advanced-javascript/
 ├── part-c-json-debugging/json-handling.js
 ├── part-d-asynchronous/order-processing.js
 ├── part-e-optimization-events/index.html, script.js, style.css
+│   └── Screenshots/
+│       ├── DEBOUNCED_SEARCH.png
+│       ├── EVENT_BUBBLING.png
+│       ├── EVENT_DELEGATION.png
+│       ├── MEMORIZATION.png
+│       └── THROTTLED_SCROLL.png
 ├── part-f-integration/quickcart.js
-├── screenshots/
 └── README.md
 ```
 
@@ -69,17 +74,17 @@ Order summary for Rahul combining a `Product` class, destructuring, `filter`, `m
 a template literal. All values are calculated, nothing is hardcoded.
 
 ## Screenshots
-Part E screenshots are in the `screenshots/` folder.
+Part E screenshots are stored in the `part-e-optimization-events/Screenshots/` folder.
 
 | Feature | Screenshot |
 |---|---|
-| Debounced search | ![debounce](screenshots/debounce.png) |
-| Throttled scroll | ![throttle](screenshots/throttle.png) |
-| Memoization | ![memoization](screenshots/memoization.png) |
-| Event bubbling | ![bubbling](screenshots/bubbling.png) |
-| Event delegation | ![delegation](screenshots/delegation.png) |
+| Debounced search | ![Debounced search](part-e-optimization-events/Screenshots/DEBOUNCED_SEARCH.png) |
+| Throttled scroll | ![Throttled scroll](part-e-optimization-events/Screenshots/THROTTLED_SCROLL.png) |
+| Memoization | ![Memoization](part-e-optimization-events/Screenshots/MEMORIZATION.png) |
+| Event bubbling | ![Event bubbling](part-e-optimization-events/Screenshots/EVENT_BUBBLING.png) |
+| Event delegation | ![Event delegation](part-e-optimization-events/Screenshots/EVENT_DELEGATION.png) |
 
 ## Submission
-- GitHub repository: _(add your repo link)_
+- GitHub repository: https://github.com/Adithya3633/advanced-javascript-assignment
 - Loom video: _(add your Loom link)_
 - Live link: N.A
